@@ -1,0 +1,58 @@
+.cad-mat {
+  max-width: 600px;
+  margin: 40px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  font-family: 'Quicksand', sans-serif;
+}
+
+.cad-mat h1 {
+  text-align: center;
+  color: #14055d;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.cad-mat form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.cad-mat label {
+  font-weight: bold;
+  color: #372784;
+}
+
+.cad-mat input, .cad-mat textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #14055d;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #edb863;
+}
+
+.mensagem {
+  text-align: center;
+  color: green;
+  font-weight: bold;
+  margin-bottom: 15px;
+}

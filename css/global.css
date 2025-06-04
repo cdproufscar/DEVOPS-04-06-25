@@ -1,0 +1,190 @@
+/* GLOBAL.CSS - PADRÃO VISUAL ASSISTIVERSE */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-color: #ffffff;
+}
+
+footer {
+  text-align: center;
+  padding: 1%;
+  background-color: #14055d;
+  color: white;
+  width: 100%;
+  position: relative;
+}
+
+h1, h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+img, iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+.cta-button, .btn-secundario {
+  display: inline-block;
+  padding: 10px 20px;
+  font-weight: bold;
+  border: 2px solid #FFC72C;
+  background: none;
+  color: #000;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.cta-button:hover, .btn-secundario:hover {
+  background: #FFC72C;
+  color: white;
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 10px;
+  background-color: #14055d;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+  background-color: #edb863;
+  color: black;
+}
+
+/* Flex/Grid */
+.grid-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.grid-item {
+  overflow: hidden;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.grid-item:hover {
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* Formulários */
+#formCadastro {
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+#formCadastro .form-label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+#formCadastro input,
+#formCadastro textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+#formCadastro input:focus,
+#formCadastro textarea:focus {
+  border-color: #14055d;
+  outline: none;
+  box-shadow: 0 0 5px rgba(20, 5, 93, 0.2);
+}
+
+/* Botão universal */
+button, .btn-editar, .btn-excluir, .btn-detalhes {
+  background-color: #14055d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.btn-editar:hover,
+.btn-detalhes:hover {
+  background-color: #372784;
+}
+
+.btn-excluir {
+  background-color: #b30000;
+}
+.btn-excluir:hover {
+  background-color: #8a0000;
+}
+
+.btn-detalhes {
+  background-color: #edb863;
+  color: #000;
+}
+
+.btn-detalhes:hover {
+  background-color: #14055d;
+  color: #fff;
+}
+
+.btn-voltar {
+  position: absolute;
+  top: 80px;
+  left: 30px;
+  background: none;
+  border: none;
+  font-size: 16px;
+  color: #14055d;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-voltar:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  #formCadastro {
+    padding: 15px;
+  }
+
+  .btn-voltar {
+    top: 70px;
+    left: 15px;
+    font-size: 14px;
+  }
+}

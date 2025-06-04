@@ -1,0 +1,169 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+  }
+  
+  main {
+    max-width: 900px;
+    margin: 50px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+  }
+  
+  h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #14055d;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .cad-prod form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    text-align: left;
+  }
+  
+  .cad-prod label {
+    font-weight: bold;
+    color: #372784;
+    font-size: 16px;
+  }
+  
+  .cad-prod input,
+  .cad-prod textarea {
+    font-family: 'Quicksand', sans-serif !important;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .cad-prod input[type="file"] {
+    padding: 5px;
+  }
+  
+  .cad-prod input:focus,
+  .cad-prod textarea:focus {
+    border-color: #14055d;
+    outline: none;
+    box-shadow: 0px 0px 8px rgba(20, 5, 93, 0.3);
+  }
+  
+  button,
+  .btn-componente,
+  .btn-detalhes,
+  .btn-excluir-comp {
+    background-color: #14055d;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover,
+  .btn-componente:hover,
+  .btn-detalhes:hover,
+  .btn-excluir-comp:hover {
+    background-color: #edb863;
+  }
+  
+  .btn-componente {
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+    font-size: 14px;
+    table-layout: auto;
+  }
+  
+  th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+    vertical-align: top;
+  }
+  
+  th {
+    background-color: #14055d;
+    color: white;
+  }
+  
+  td {
+    background-color: #f9f9f9;
+  }
+  
+  tr:hover td {
+    background-color: #eef;
+  }
+  
+  .mensagem-sucesso {
+    background-color: #dff0d8;
+    color: #3c763d;
+    padding: 10px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .mensagem-erro {
+    background-color: #f8d7da;
+    color: #a94442;
+    padding: 10px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+ /* Ajuste exclusivo para os placeholders dentro de .cad-prod */
+.cad-prod input::placeholder,
+.cad-prod textarea::placeholder {
+  font-family: 'Quicksand', sans-serif;
+  color: #888;
+  font-size: 15px;
+  font-weight: 400;
+  opacity: 1;
+}
+
+/* Compatibilidade com navegadores antigos */
+.cad-prod input:-moz-placeholder,
+.cad-prod textarea:-moz-placeholder {
+  font-family: 'Quicksand', sans-serif;
+  color: #888;
+  font-size: 15px;
+  font-weight: 400;
+  opacity: 1;
+}
+
+.cad-prod input:-ms-input-placeholder,
+.cad-prod textarea:-ms-input-placeholder {
+  font-family: 'Quicksand', sans-serif;
+  color: #888;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.cad-prod input::-webkit-input-placeholder,
+.cad-prod textarea::-webkit-input-placeholder {
+  font-family: 'Quicksand', sans-serif;
+  color: #888;
+  font-size: 15px;
+  font-weight: 400;
+}

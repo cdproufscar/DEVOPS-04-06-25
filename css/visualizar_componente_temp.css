@@ -1,0 +1,147 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+  }
+  
+  main.temp-comp {
+    max-width: 900px;
+    margin: 50px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+  }
+  
+  h1 {
+    font-size: 28px;
+    color: #14055d;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .comp-bloco {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: #fefefe;
+  }
+  
+  .comp-bloco h2 {
+    color: #372784;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .comp-bloco p {
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+  
+  .midia {
+    margin-top: 10px;
+  }
+  
+  .comp-img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 5px;
+    border: 2px solid #ccc;
+  }
+  
+  .vinculos h4 {
+    margin-top: 10px;
+    color: #14055d;
+    font-weight: bold;
+  }
+  
+  .vinculos ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  
+  .botoes {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .btn-voltar {
+    background-color: #372784;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  
+  .btn-voltar:hover {
+    background-color: #14055d;
+  }
+  
+  /* Botão excluir */
+  .btn-excluir-comp {
+    background-color: #b30000;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .btn-excluir-comp:hover {
+    background-color: #8a0000;
+  }
+  
+  /* Botão extra */
+  .btn-ver-todos {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #14055d;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .btn-ver-todos:hover {
+    background-color: #edb863;
+    color: #fff;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .comp-img {
+      width: 90px;
+      height: 90px;
+    }
+  
+    main.temp-comp {
+      padding: 20px;
+      width: 90%;
+    }
+  
+    h1 {
+      font-size: 22px;
+    }
+  
+    .btn-voltar,
+    .btn-excluir-comp,
+    .btn-ver-todos {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  }
+  

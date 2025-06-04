@@ -1,0 +1,189 @@
+/* Estilo geral do perfil */
+main {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #f5f5f5;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #14055d;
+  margin-bottom: 20px;
+}
+
+/* Estilizando o formulário */
+.perfil form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.perfil label {
+  font-weight: bold;
+  text-align: left;
+  display: block;
+  color: #372784;
+  font-size: 16px;
+}
+
+.perfil input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.perfil input:focus {
+  border-color: #14055d;
+  outline: none;
+  box-shadow: 0px 0px 8px rgba(20, 5, 93, 0.3);
+}
+
+/* Botão de atualização */
+button {
+  background-color: #14055d;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #edb863;
+}
+
+/* Foto de perfil */
+.perfil-foto {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.perfil-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #14055d;
+  transition: transform 0.3s ease;
+}
+
+.perfil-img:hover {
+  transform: scale(1.1);
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .perfil-img {
+    width: 80px;
+    height: 80px;
+  }
+
+  main {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .catalogo-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .produto-card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .perfil-img {
+    width: 70px;
+    height: 70px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  .btn-editar, .btn-excluir {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+}
+
+/* Produtos do usuário */
+.meus-produtos {
+  margin-top: 40px;
+  text-align: left;
+}
+
+.catalogo-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.produto-card {
+  background: white;
+  border-radius: 8px;
+  padding: 15px;
+  width: 100%;
+  max-width: 280px;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.produto-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.produto-actions {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-editar,
+.btn-excluir {
+  background-color: #14055d;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.btn-excluir {
+  background-color: #b30000;
+}
+
+
+.btn-detalhes {
+  display: inline-block;
+  margin-top: 8px;
+  background-color: #edb863;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.btn-detalhes:hover {
+  background-color: #372784;
+  color: #fff;
+}

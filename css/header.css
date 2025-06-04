@@ -1,0 +1,189 @@
+/* Estilos Gerais do Header */
+.site-header {
+    background-color: #f5f5f5;
+    padding: 15px 20px;
+    width: 100%;
+}
+
+.container-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+.logo img {
+    width: 180px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.05);
+}
+
+/* Menu */
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: normal;
+    transition: color 0.3s ease, transform 0.2s;
+}
+
+.menu a:hover {
+    transform: scale(1.05);
+    font-weight: bold;
+}
+
+/* Agrupando os itens da direita (Pesquisa + Botão Login/Logout + Perfil) */
+.direito {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Espaçamento entre os itens */
+}
+
+/* Pesquisa */
+.barra-busca .search-container {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+.barra-busca .search-box {
+    border: none;
+    outline: none;
+    background: none;
+    padding: 5px;
+    font-size: 14px;
+    width: 140px; /* Ajustado para melhor alinhamento */
+}
+
+.barra-busca .search-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.barra-busca .search-button span {
+    margin-right: 5px;
+    color: #333;
+    font-size: 14px;
+}
+
+/* Ícone de pesquisa */
+.barra-busca .search-icon {
+    width: 15px;
+    height: 15px;
+}
+
+/* Botão de Login/Logout */
+.b_login {
+    display: flex;
+}
+
+.btn-login {
+    background-color: #ffc414;
+    font-size: 16px;
+    padding: 7px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    color: white;
+}
+
+.btn-login:hover {
+    background-color: #14055d;
+}
+
+/* Container da parte direita do header */
+.user-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Ícone do usuário */
+.user-profile {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.user-icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 2px solid #14055d;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.user-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 1024px) {
+    .container-header {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .menu {
+        margin-top: 10px;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .direito {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .search-container {
+        margin-top: 10px;
+    }
+
+    .b_login {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .user-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .btn-logout {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .user-icon {
+        width: 28px;
+        height: 28px;
+    }
+
+    .btn-logout {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+}

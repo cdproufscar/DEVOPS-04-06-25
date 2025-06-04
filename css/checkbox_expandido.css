@@ -1,0 +1,53 @@
+/* Caixa de seleção com rolagem e estilo */
+.checkbox-box {
+  max-height: 200px;
+  overflow-y: auto;
+  background: #f0f2ff;
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+/* Rótulos individuais */
+.checkbox-box label {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 10px;
+  display: block;
+  cursor: pointer;
+  color: #14055d;
+  font-weight: 500;
+}
+
+/* Checkbox posicionado à esquerda */
+.checkbox-box input[type="checkbox"] {
+  position: absolute;
+  left: 0;
+  top: 3px;
+}
+
+/* Tooltip com descrição ao passar o mouse */
+.checkbox-box label:hover::after {
+  content: attr(data-desc);
+  position: absolute;
+  top: -5px;
+  left: 105%;
+  background: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  color: #333;
+  white-space: normal;
+  width: 250px;
+  z-index: 999;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .checkbox-box label:hover::after {
+    left: auto;
+    top: 100%;
+    width: 100%;
+  }
+}
